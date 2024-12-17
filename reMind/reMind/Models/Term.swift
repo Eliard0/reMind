@@ -26,7 +26,7 @@ extension Term {
     @NSManaged public var rawSRS: Int16
     @NSManaged public var rawTheme: Int16
     @NSManaged public var value: String?
-    @NSManaged public var boxID: Box?
+    @NSManaged public var box: Box?
 
 }
 

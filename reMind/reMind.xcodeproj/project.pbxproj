@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE1640962AC2126E0073317C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1640922AC2126E0073317C /* Box.swift */; };
-		FE1640992AC2126E0073317C /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1640952AC2126E0073317C /* Term.swift */; };
+		E9056F472D122C7A007925A0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9056F462D122C7A007925A0 /* Box.swift */; };
+		E9056F492D122C89007925A0 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9056F482D122C89007925A0 /* Term.swift */; };
 		FE3ABEC72A4F59D800432ED4 /* reRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3ABEC62A4F59D800432ED4 /* reRadioButton.swift */; };
 		FE3ABECD2A4F5E8F00432ED4 /* reRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3ABECC2A4F5E8F00432ED4 /* reRadioButtonGroup.swift */; };
 		FE3ABED02A4F65BC00432ED4 /* TermEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3ABECF2A4F65BC00432ED4 /* TermEditorView.swift */; };
@@ -42,8 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE1640922AC2126E0073317C /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = SOURCE_ROOT; };
-		FE1640952AC2126E0073317C /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = SOURCE_ROOT; };
+		E9056F462D122C7A007925A0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		E9056F482D122C89007925A0 /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		FE3ABEC62A4F59D800432ED4 /* reRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reRadioButton.swift; sourceTree = "<group>"; };
 		FE3ABECC2A4F5E8F00432ED4 /* reRadioButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reRadioButtonGroup.swift; sourceTree = "<group>"; };
 		FE3ABECF2A4F65BC00432ED4 /* TermEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermEditorView.swift; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 		FE3ABEE02A53543300432ED4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FE1640922AC2126E0073317C /* Box.swift */,
-				FE1640952AC2126E0073317C /* Term.swift */,
+				E9056F482D122C89007925A0 /* Term.swift */,
+				E9056F462D122C7A007925A0 /* Box.swift */,
 				FEA517A92A548FBC0004D9D1 /* SwipeReview.swift */,
 				FE6F11B42A605AB9003511F3 /* reMind.xcdatamodeld */,
 			);
@@ -395,18 +395,18 @@
 				FEE2DC752A4B6172006A535D /* reBackground.swift in Sources */,
 				FEA517AA2A548FBC0004D9D1 /* SwipeReview.swift in Sources */,
 				FEA517AE2A54963E0004D9D1 /* SwipperCard.swift in Sources */,
-				FE1640962AC2126E0073317C /* Box.swift in Sources */,
 				FE3ABED52A5326C200432ED4 /* BoxView.swift in Sources */,
-				FE1640992AC2126E0073317C /* Term.swift in Sources */,
 				FE3ABECD2A4F5E8F00432ED4 /* reRadioButtonGroup.swift in Sources */,
 				FEE2DC732A4B5CE4006A535D /* Palette.swift in Sources */,
 				FE3ABEDA2A532A4D00432ED4 /* reColorButtonStyle.swift in Sources */,
 				FE3ABED22A4F680C00432ED4 /* reButtonStyle.swift in Sources */,
+				E9056F472D122C7A007925A0 /* Box.swift in Sources */,
 				FE5B807A2A4CB0DA00711F80 /* reBadge.swift in Sources */,
 				FE3ABEC72A4F59D800432ED4 /* reRadioButton.swift in Sources */,
 				FEDE8E0D2A4E037F00EEF7EA /* reTextEditor.swift in Sources */,
 				FEDE8E092A4DFFE100EEF7EA /* BoxEditorView.swift in Sources */,
 				FE3ABED02A4F65BC00432ED4 /* TermEditorView.swift in Sources */,
+				E9056F492D122C89007925A0 /* Term.swift in Sources */,
 				FE6A9F9C2A461E2400A84FC9 /* BoxesView.swift in Sources */,
 				FE3ABED82A5328FD00432ED4 /* TodaysCardsView.swift in Sources */,
 				FE6F11AF2A605A21003511F3 /* CoreDataModel.swift in Sources */,

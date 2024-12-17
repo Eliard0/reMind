@@ -25,6 +25,7 @@ struct reTextEditor: View {
                         if text.count > maxSize {
                             self.text = String(text.prefix(maxSize))
                         }
+                        self.maxSize = 150 - text.count
                     }
 
                 Divider()

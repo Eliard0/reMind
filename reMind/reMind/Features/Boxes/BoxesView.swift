@@ -48,7 +48,11 @@ struct BoxesView: View {
             BoxEditorView(name: "",
                           keywords: "",
                           description: "",
-                          theme: 0)
+                          theme: 0,
+                          boxViewModel: viewModel,
+                          onSave: {
+                viewModel.boxes = Box.all()
+            })
         }
     }
 }

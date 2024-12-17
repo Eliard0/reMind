@@ -28,4 +28,21 @@ class BoxViewModel: ObservableObject {
 
         return filteredTerms.count == 0 ? "" : "\(filteredTerms.count)"
     }
+    
+    func saveBox(name: String, thema: Int, description: String) {
+        let context = CoreDataStack.inMemory.managedContext
+        
+        let box = Box(context: context)
+        box.rawTheme = Int16(thema)
+        box.name = name
+        box.identifier = UUID()
+        
+        do {
+            try context.save()
+            self.boxes = Box.all()
+            print("Box salvo com sucesso!")
+        } catch {
+            print("Erro ao salvar Box: \(error)")
+        }
+    }
 }

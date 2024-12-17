@@ -12,6 +12,10 @@ struct BoxEditorView: View {
     @State var keywords: String
     @State var description: String
     @State var theme: Int
+    
+    var boxViewModel = BoxViewModel()
+    var onSave: (() -> Void)?
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NavigationStack {
@@ -35,13 +39,15 @@ struct BoxEditorView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
-                        print("Cancel")
+                        dismiss()
                     }
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        print("Cancel")
+                        boxViewModel.saveBox(name: name, thema: theme, description: description)
+                        onSave?()
+                        dismiss()
                     }
                     .fontWeight(.bold)
                 }
