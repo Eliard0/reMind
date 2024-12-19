@@ -36,13 +36,10 @@ class BoxesViewModel: ObservableObject {
         box.rawTheme = Int16(thema)
         box.name = name
         box.identifier = UUID()
-        print(thema)
         
         do {
             try context.save()
             self.boxes = Box.all()
-            print("Box salvo com sucesso!")
-            print(boxes)
         } catch {
             print("Erro ao salvar Box: \(error)")
         }

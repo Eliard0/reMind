@@ -12,6 +12,7 @@ struct TermEditorView: View {
     @State var meaning: String
     
     @Environment(\.dismiss) private var dismiss
+    @ObservedObject var boxViewModel: BoxViewModel
     
     var body: some View {
         NavigationStack {
@@ -22,7 +23,8 @@ struct TermEditorView: View {
                 Spacer()
 
                 Button(action: {
-                    print("save and add new")
+                    boxViewModel.saveTerm(term: term, meaning:  meaning)
+                    dismiss()
                 }, label: {
                     Text("Save and Add New")
                         .frame(maxWidth: .infinity)
@@ -53,6 +55,10 @@ struct TermEditorView: View {
 
 struct TermEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        TermEditorView(term: "", meaning: "")
+        let mockBox = Box(context: CoreDataStack.inMemory.managedContext)
+
+        let boxViewModel = BoxViewModel(box: mockBox)
+        
+        TermEditorView(term: "", meaning: "", boxViewModel: boxViewModel) 
     }
 }

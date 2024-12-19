@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E9056F472D122C7A007925A0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9056F462D122C7A007925A0 /* Box.swift */; };
 		E9056F492D122C89007925A0 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9056F482D122C89007925A0 /* Term.swift */; };
+		E9B90E382D14CAF800EED567 /* BoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B90E372D14CAF200EED567 /* BoxViewModel.swift */; };
 		FE3ABEC72A4F59D800432ED4 /* reRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3ABEC62A4F59D800432ED4 /* reRadioButton.swift */; };
 		FE3ABECD2A4F5E8F00432ED4 /* reRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3ABECC2A4F5E8F00432ED4 /* reRadioButtonGroup.swift */; };
 		FE3ABED02A4F65BC00432ED4 /* TermEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3ABECF2A4F65BC00432ED4 /* TermEditorView.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		E9056F462D122C7A007925A0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		E9056F482D122C89007925A0 /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		E9B90E372D14CAF200EED567 /* BoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewModel.swift; sourceTree = "<group>"; };
 		FE3ABEC62A4F59D800432ED4 /* reRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reRadioButton.swift; sourceTree = "<group>"; };
 		FE3ABECC2A4F5E8F00432ED4 /* reRadioButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reRadioButtonGroup.swift; sourceTree = "<group>"; };
 		FE3ABECF2A4F65BC00432ED4 /* TermEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermEditorView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				FE3ABED62A5328C100432ED4 /* Components */,
 				FE3ABED42A5326C200432ED4 /* BoxView.swift */,
+				E9B90E372D14CAF200EED567 /* BoxViewModel.swift */,
 			);
 			path = Box;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				FE3ABED52A5326C200432ED4 /* BoxView.swift in Sources */,
 				FE3ABECD2A4F5E8F00432ED4 /* reRadioButtonGroup.swift in Sources */,
 				FEE2DC732A4B5CE4006A535D /* Palette.swift in Sources */,
+				E9B90E382D14CAF800EED567 /* BoxViewModel.swift in Sources */,
 				FE3ABEDA2A532A4D00432ED4 /* reColorButtonStyle.swift in Sources */,
 				FE3ABED22A4F680C00432ED4 /* reButtonStyle.swift in Sources */,
 				E9056F472D122C7A007925A0 /* Box.swift in Sources */,

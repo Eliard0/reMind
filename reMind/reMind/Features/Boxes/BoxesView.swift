@@ -16,14 +16,12 @@ struct BoxesView: View {
     @ObservedObject var viewModel: BoxesViewModel
     @State private var isCreatingNewBox: Bool = false
     
-    
-    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(viewModel.boxes) { box in
                     NavigationLink {
-                        BoxView(box: box)
+                        BoxView(box: box, viewModel: BoxViewModel(box: box))
                     } label: {
                         BoxCardView(boxName: box.name ?? "Unkown",
                                     numberOfTerms: box.numberOfTerms,
@@ -60,26 +58,26 @@ struct BoxesView: View {
 }
 
 struct BoxesView_Previews: PreviewProvider {
-
+    
     static let viewModel: BoxesViewModel = {
         let box1 = Box(context: CoreDataStack.inMemory.managedContext)
         box1.name = "Box 1"
         box1.rawTheme = 0
-
+        
         let term = Term(context: CoreDataStack.inMemory.managedContext)
         term.lastReview = Calendar.current.date(byAdding: .day,
                                                 value: -5,
                                                 to: Date())!
         box1.addToTerms(term)
-
+        
         let box2 = Box(context: CoreDataStack.inMemory.managedContext)
         box2.name = "Box 2"
         box2.rawTheme = 1
-
+        
         let box3 = Box(context: CoreDataStack.inMemory.managedContext)
         box3.name = "Box 3"
         box3.rawTheme = 2
-
+        
         return BoxesViewModel()
     }()
     
