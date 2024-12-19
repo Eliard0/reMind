@@ -27,8 +27,8 @@ struct BoxView: View {
     
     var body: some View {
         List {
-                TodaysCardsView(numberOfPendingCards: 0,
-                                theme: .mauve)
+            TodaysCardsView(numberOfPendingCards: box.numberOfTerms,
+                            theme: box.theme)
             Section {
                 ForEach(filteredTerms, id: \.self) { term in
                     Text(term.value ?? "Unknown")

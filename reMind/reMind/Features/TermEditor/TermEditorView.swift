@@ -11,6 +11,8 @@ struct TermEditorView: View {
     @State var term: String
     @State var meaning: String
     
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
@@ -34,7 +36,7 @@ struct TermEditorView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
-                        print("Cancel")
+                        dismiss()
                     }
                 }
                 

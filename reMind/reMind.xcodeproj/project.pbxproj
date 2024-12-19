@@ -38,7 +38,7 @@
 		FEE2DC732A4B5CE4006A535D /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2DC722A4B5CE4006A535D /* Palette.swift */; };
 		FEE2DC752A4B6172006A535D /* reBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2DC742A4B6172006A535D /* reBackground.swift */; };
 		FEE2DC782A4B70FA006A535D /* BoxCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2DC772A4B70FA006A535D /* BoxCardView.swift */; };
-		FEEFCBBD2A65DAA400A61FE9 /* BoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFCBBC2A65DAA400A61FE9 /* BoxViewModel.swift */; };
+		FEEFCBBD2A65DAA400A61FE9 /* BoxesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEFCBBC2A65DAA400A61FE9 /* BoxesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +74,7 @@
 		FEE2DC722A4B5CE4006A535D /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		FEE2DC742A4B6172006A535D /* reBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reBackground.swift; sourceTree = "<group>"; };
 		FEE2DC772A4B70FA006A535D /* BoxCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCardView.swift; sourceTree = "<group>"; };
-		FEEFCBBC2A65DAA400A61FE9 /* BoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewModel.swift; sourceTree = "<group>"; };
+		FEEFCBBC2A65DAA400A61FE9 /* BoxesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +272,7 @@
 			children = (
 				FEE2DC762A4B70E9006A535D /* Components */,
 				FE6A9F9B2A461E2400A84FC9 /* BoxesView.swift */,
-				FEEFCBBC2A65DAA400A61FE9 /* BoxViewModel.swift */,
+				FEEFCBBC2A65DAA400A61FE9 /* BoxesViewModel.swift */,
 			);
 			path = Boxes;
 			sourceTree = "<group>";
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEEFCBBD2A65DAA400A61FE9 /* BoxViewModel.swift in Sources */,
+				FEEFCBBD2A65DAA400A61FE9 /* BoxesViewModel.swift in Sources */,
 				FEDE8E052A4DFADE00EEF7EA /* reTextField.swift in Sources */,
 				FE3ABEE92A53563F00432ED4 /* SwipperLabel.swift in Sources */,
 				FEE2DC752A4B6172006A535D /* reBackground.swift in Sources */,

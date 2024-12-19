@@ -56,18 +56,18 @@ extension Box: CoreDataModel {
 }
 
 enum reTheme: Int {
-    case aquamarine = 0
-    case mauve
+    case mauve = 0
     case lavender
+    case aquamarine
 
     var name: String {
         switch self {
-        case .aquamarine:
-            return "aquamarine"
         case .mauve:
             return "mauve"
         case .lavender:
             return "lavender"
+        case .aquamarine:
+            return "aquamarine"
         }
     }
 }

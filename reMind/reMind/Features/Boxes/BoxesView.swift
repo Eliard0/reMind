@@ -13,8 +13,10 @@ struct BoxesView: View {
         GridItem(.adaptive(minimum: 140), spacing: 20)
     ]
     
-    @ObservedObject var viewModel: BoxViewModel
+    @ObservedObject var viewModel: BoxesViewModel
     @State private var isCreatingNewBox: Bool = false
+    
+    
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -59,7 +61,7 @@ struct BoxesView: View {
 
 struct BoxesView_Previews: PreviewProvider {
 
-    static let viewModel: BoxViewModel = {
+    static let viewModel: BoxesViewModel = {
         let box1 = Box(context: CoreDataStack.inMemory.managedContext)
         box1.name = "Box 1"
         box1.rawTheme = 0
@@ -78,7 +80,7 @@ struct BoxesView_Previews: PreviewProvider {
         box3.name = "Box 3"
         box3.rawTheme = 2
 
-        return BoxViewModel()
+        return BoxesViewModel()
     }()
     
     static var previews: some View {

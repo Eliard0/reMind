@@ -25,7 +25,7 @@ struct TodaysCardsView: View {
                 Text("Start Swipping")
                     .frame(maxWidth: .infinity)
             })
-            .buttonStyle(reColorButtonStyle(.mauve))
+            .buttonStyle(reColorButtonStyle(theme))
             .padding(.top, 10)
         }
         .padding(.vertical, 16)

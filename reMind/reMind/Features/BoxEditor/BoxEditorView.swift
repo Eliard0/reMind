@@ -13,7 +13,7 @@ struct BoxEditorView: View {
     @State var description: String
     @State var theme: Int
     
-    var boxViewModel = BoxViewModel()
+    var boxViewModel = BoxesViewModel()
     var onSave: (() -> Void)?
     @Environment(\.dismiss) private var dismiss
 
